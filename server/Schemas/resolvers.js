@@ -3,7 +3,7 @@ const { User } = require('../models');
 
 const resolvers = {
     Query: {
-      me: asnyc () => {
+      me:  () => {
         return me.find().sort({ createdAt: -1 });
           }
      }  
